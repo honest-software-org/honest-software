@@ -1,4 +1,5 @@
 .gitignore
 .assetsignore
+wrangler.jsonc
 avatar-512.png
 **/.DS_Store

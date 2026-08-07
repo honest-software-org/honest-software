@@ -1,0 +1,12 @@
+{
+  // The site is plain static files; the repository root is the asset
+  // directory. Files that should not be published are listed in
+  // .assetsignore.
+  "name": "honest-software",
+  "compatibility_date": "2026-08-08",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "none",
+    "html_handling": "auto-trailing-slash"
+  }
+}
