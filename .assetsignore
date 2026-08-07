@@ -1,0 +1,4 @@
+.gitignore
+.assetsignore
+avatar-512.png
+**/.DS_Store
