@@ -4,6 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Honest Software</title>
+  <meta name="description" content="Eight rules for software that respects people: no data collection, no dark patterns, free, open source, self-hostable. An open standard — no registration required.">
+
+  <link rel="canonical" href="https://honest-software.org/">
+  <link rel="alternate" hreflang="en" href="https://honest-software.org/">
+  <link rel="alternate" hreflang="ru" href="https://honest-software.org/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://honest-software.org/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Honest Software">
+  <meta property="og:title" content="Honest Software">
+  <meta property="og:description" content="Eight rules for software that respects people. An open standard — no registration required.">
+  <meta property="og:url" content="https://honest-software.org/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://honest-software.org/#website",
+        "url": "https://honest-software.org/",
+        "name": "Honest Software",
+        "inLanguage": ["en", "ru"],
+        "license": "https://spdx.org/licenses/MIT.html"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://honest-software.org/#manifesto",
+        "name": "Honest Software",
+        "url": "https://honest-software.org/",
+        "inLanguage": "en",
+        "description": "A set of principles for building software that respects people. Inspired by the Dogma 95 film movement, these rules strip software down to what it should have always been: useful, transparent, and free. An open standard — no registration required.",
+        "license": "https://spdx.org/licenses/MIT.html",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-1",
+            "termCode": "1",
+            "name": "No data collection",
+            "description": "The application must not collect, store, or transmit personal data. No accounts, no cookies, no analytics, no tracking — not even anonymized. If the software doesn't need to know who you are, it won't ask."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-2",
+            "termCode": "2",
+            "name": "Minimal permissions",
+            "description": "The software must request only the permissions it cannot function without. No \"just in case\", no silent grabs. If you can't justify a permission in one sentence, you don't get it."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-3",
+            "termCode": "3",
+            "name": "No dark patterns",
+            "description": "The interface must not manipulate. No hidden unsubscribe flows, no pre-checked boxes, no fake urgency, no guilt-tripping, no deceptive defaults. The UI must respect the user's attention and intelligence."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-4",
+            "termCode": "4",
+            "name": "System theme only",
+            "description": "The application may support dark and light themes, but must not include a theme toggle. Use the system preference — nothing else. If a user wants to override your theme specifically, that's a signal your theme is broken, not a feature request."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-5",
+            "termCode": "5",
+            "name": "Free forever",
+            "description": "The software must be free. No subscriptions, no paid tiers, no in-app purchases, no \"pro\" versions. If you're thinking about monetization, you're thinking about the wrong thing."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-6",
+            "termCode": "6",
+            "name": "Open source",
+            "description": "All code must be open source and released under the MIT license — including the server-side. No proprietary backends, no hidden logic. If you can't read it, it shouldn't exist."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-7",
+            "termCode": "7",
+            "name": "Self-hostable",
+            "description": "The software must be self-hostable by design. Any person with basic technical knowledge should be able to run it on their own infrastructure. No mandatory cloud, no vendor lock-in."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/#rule-8",
+            "termCode": "8",
+            "name": "Data ownership",
+            "description": "If the software manages data on behalf of the user, that data must be fully exportable and importable at any time. The user owns their data — not the software, not the developer. If the project dies, the data survives."
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -218,37 +317,37 @@
 
   <hr>
 
-  <ol>
+  <ol role="list">
     <li>
-      <div class="rule-title"><span class="rule-number">1</span>No data collection</div>
+      <h2 class="rule-title"><span class="rule-number">1</span>No data collection</h2>
       <div class="rule-body">The application must not collect, store, or transmit personal data. No accounts, no cookies, no analytics, no tracking — not even anonymized. If the software doesn't need to know who you are, it won't ask.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">2</span>Minimal permissions</div>
+      <h2 class="rule-title"><span class="rule-number">2</span>Minimal permissions</h2>
       <div class="rule-body">The software must request only the permissions it cannot function without. No "just in case", no silent grabs. If you can't justify a permission in one sentence, you don't get it.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">3</span>No dark patterns</div>
+      <h2 class="rule-title"><span class="rule-number">3</span>No dark patterns</h2>
       <div class="rule-body">The interface must not manipulate. No hidden unsubscribe flows, no pre-checked boxes, no fake urgency, no guilt-tripping, no deceptive defaults. The UI must respect the user's attention and intelligence.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">4</span>System theme only</div>
+      <h2 class="rule-title"><span class="rule-number">4</span>System theme only</h2>
       <div class="rule-body">The application may support dark and light themes, but must not include a theme toggle. Use the system preference — nothing else. If a user wants to override your theme specifically, that's a signal your theme is broken, not a feature request.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">5</span>Free forever</div>
+      <h2 class="rule-title"><span class="rule-number">5</span>Free forever</h2>
       <div class="rule-body">The software must be free. No subscriptions, no paid tiers, no in-app purchases, no "pro" versions. If you're thinking about monetization, you're thinking about the wrong thing.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">6</span>Open source</div>
+      <h2 class="rule-title"><span class="rule-number">6</span>Open source</h2>
       <div class="rule-body">All code must be open source and released under the MIT license — including the server-side. No proprietary backends, no hidden logic. If you can't read it, it shouldn't exist.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">7</span>Self-hostable</div>
+      <h2 class="rule-title"><span class="rule-number">7</span>Self-hostable</h2>
       <div class="rule-body">The software must be self-hostable by design. Any person with basic technical knowledge should be able to run it on their own infrastructure. No mandatory cloud, no vendor lock-in.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">8</span>Data ownership</div>
+      <h2 class="rule-title"><span class="rule-number">8</span>Data ownership</h2>
       <div class="rule-body">If the software manages data on behalf of the user, that data must be fully exportable and importable at any time. The user owns their data — not the software, not the developer. If the project dies, the data survives.</div>
     </li>
   </ol>

@@ -1,0 +1,9 @@
+# Honest Software is an open standard released under the MIT license.
+# It exists to be copied, quoted, translated and learned from.
+# Every use below is granted deliberately — read, index, train, cite.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Sitemap: https://honest-software.org/sitemap.xml

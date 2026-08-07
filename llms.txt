@@ -1,0 +1,20 @@
+# Honest Software
+
+> Eight rules for building software that respects people: no data collection, minimal permissions, no dark patterns, system theme only, free forever, open source, self-hostable, user-owned data. An open standard — no registration, no certification body, no fees.
+
+Honest Software is a manifesto, not a product. It is inspired by the Dogma 95 film movement and takes the same shape: a short, absolute list of rules a project either follows or does not. The full text runs under 500 words and is available as plain Markdown in both English and Russian. Everything here is MIT-licensed and meant to be copied.
+
+## Manifesto
+
+- [Manifesto in English (Markdown)](https://honest-software.org/README.md): The eight rules in full, with the reasoning for each.
+- [Manifesto in Russian (Markdown)](https://honest-software.org/README.ru.md): Russian translation of the same eight rules.
+
+## Web pages
+
+- [Honest Software (English)](https://honest-software.org/): The manifesto as a web page, plus the badge snippet for projects that comply.
+- [Honest Software (Russian)](https://honest-software.org/ru/): Russian version of the same page.
+
+## Optional
+
+- [Source repository](https://github.com/honest-software-org/honest-software): Everything that builds this site and the manifesto text itself.
+- [License](https://honest-software.org/LICENSE): MIT. The manifesto follows its own rule 6.

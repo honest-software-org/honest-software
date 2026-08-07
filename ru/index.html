@@ -4,6 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Honest Software</title>
+  <meta name="description" content="Восемь правил для софта, который уважает людей: никакого сбора данных, никаких dark patterns, бесплатно, открытый код, self-hostable. Открытый стандарт, регистрация не требуется.">
+
+  <link rel="canonical" href="https://honest-software.org/ru/">
+  <link rel="alternate" hreflang="en" href="https://honest-software.org/">
+  <link rel="alternate" hreflang="ru" href="https://honest-software.org/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://honest-software.org/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Honest Software">
+  <meta property="og:title" content="Honest Software">
+  <meta property="og:description" content="Восемь правил для софта, который уважает людей. Открытый стандарт, регистрация не требуется.">
+  <meta property="og:url" content="https://honest-software.org/ru/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://honest-software.org/#website",
+        "url": "https://honest-software.org/",
+        "name": "Honest Software",
+        "inLanguage": ["en", "ru"],
+        "license": "https://spdx.org/licenses/MIT.html"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://honest-software.org/ru/#manifesto",
+        "name": "Honest Software",
+        "url": "https://honest-software.org/ru/",
+        "inLanguage": "ru",
+        "description": "Набор принципов для разработки софта, который уважает людей. По духу близко к манифесту Dogma 95: эти правила сдирают с софта всё лишнее и оставляют то, чем он должен был быть с самого начала — полезным, прозрачным и бесплатным. Открытый стандарт, регистрация не требуется.",
+        "license": "https://spdx.org/licenses/MIT.html",
+        "sameAs": "https://honest-software.org/#manifesto",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-1",
+            "termCode": "1",
+            "name": "Никаких данных",
+            "description": "Приложение не должно собирать, хранить или передавать персональные данные. Никаких аккаунтов, куки, аналитики, трекинга — даже анонимного. Если софту не нужно знать кто ты — он не спросит."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-2",
+            "termCode": "2",
+            "name": "Минимум разрешений",
+            "description": "Приложение должно запрашивать только те разрешения, без которых оно буквально не работает. Никакого «на всякий случай», никаких тихих захватов. Если не можешь обосновать разрешение одним предложением — не получишь его."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-3",
+            "termCode": "3",
+            "name": "Никаких dark patterns",
+            "description": "Интерфейс не должен манипулировать. Никаких скрытых кнопок отписки, никаких пречекнутых чекбоксов, никакой искусственной срочности, никакого guilt-tripping, никаких обманных дефолтов. UI обязан уважать внимание и интеллект пользователя."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-4",
+            "termCode": "4",
+            "name": "Системная тема",
+            "description": "Приложение может поддерживать тёмную и светлую тему, но не должно содержать переключателя. Только системные настройки — и ничего больше. Если пользователь хочет переключить тему именно у тебя — это сигнал, что твоя тема сломана, а не запрос на фичу."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-5",
+            "termCode": "5",
+            "name": "Бесплатно навсегда",
+            "description": "Софт должен быть бесплатным. Никаких подписок, платных тиров, внутренних покупок, «pro»-версий. Если думаешь о монетизации — думаешь не о том."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-6",
+            "termCode": "6",
+            "name": "Open source",
+            "description": "Весь код должен быть открытым и выходить под лицензией MIT — включая серверную часть. Никаких проприетарных бэкендов, никакой скрытой логики. Если нельзя прочитать — значит, этого не должно существовать."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-7",
+            "termCode": "7",
+            "name": "Self-hostable",
+            "description": "Софт должен быть self-hostable по дизайну. Любой человек с базовыми техническими знаниями должен уметь поднять его на своей инфраструктуре. Никакого обязательного облака, никакого vendor lock-in."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://honest-software.org/ru/#rule-8",
+            "termCode": "8",
+            "name": "Данные принадлежат пользователю",
+            "description": "Если приложение управляет данными пользователя — эти данные должны быть доступны для экспорта и импорта в любой момент. Данные принадлежат пользователю — не софту, не разработчику. Если проект умирает — данные выживают."
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -218,37 +318,37 @@
 
   <hr>
 
-  <ol>
+  <ol role="list">
     <li>
-      <div class="rule-title"><span class="rule-number">1</span>Никаких данных</div>
+      <h2 class="rule-title"><span class="rule-number">1</span>Никаких данных</h2>
       <div class="rule-body">Приложение не должно собирать, хранить или передавать персональные данные. Никаких аккаунтов, куки, аналитики, трекинга — даже анонимного. Если софту не нужно знать кто ты — он не спросит.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">2</span>Минимум разрешений</div>
+      <h2 class="rule-title"><span class="rule-number">2</span>Минимум разрешений</h2>
       <div class="rule-body">Приложение должно запрашивать только те разрешения, без которых оно буквально не работает. Никакого «на всякий случай», никаких тихих захватов. Если не можешь обосновать разрешение одним предложением — не получишь его.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">3</span>Никаких dark patterns</div>
+      <h2 class="rule-title"><span class="rule-number">3</span>Никаких dark patterns</h2>
       <div class="rule-body">Интерфейс не должен манипулировать. Никаких скрытых кнопок отписки, никаких пречекнутых чекбоксов, никакой искусственной срочности, никакого guilt-tripping, никаких обманных дефолтов. UI обязан уважать внимание и интеллект пользователя.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">4</span>Системная тема</div>
+      <h2 class="rule-title"><span class="rule-number">4</span>Системная тема</h2>
       <div class="rule-body">Приложение может поддерживать тёмную и светлую тему, но не должно содержать переключателя. Только системные настройки — и ничего больше. Если пользователь хочет переключить тему именно у тебя — это сигнал, что твоя тема сломана, а не запрос на фичу.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">5</span>Бесплатно навсегда</div>
+      <h2 class="rule-title"><span class="rule-number">5</span>Бесплатно навсегда</h2>
       <div class="rule-body">Софт должен быть бесплатным. Никаких подписок, платных тиров, внутренних покупок, «pro»-версий. Если думаешь о монетизации — думаешь не о том.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">6</span>Open source</div>
+      <h2 class="rule-title"><span class="rule-number">6</span>Open source</h2>
       <div class="rule-body">Весь код должен быть открытым и выходить под лицензией MIT — включая серверную часть. Никаких проприетарных бэкендов, никакой скрытой логики. Если нельзя прочитать — значит, этого не должно существовать.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">7</span>Self-hostable</div>
+      <h2 class="rule-title"><span class="rule-number">7</span>Self-hostable</h2>
       <div class="rule-body">Софт должен быть self-hostable по дизайну. Любой человек с базовыми техническими знаниями должен уметь поднять его на своей инфраструктуре. Никакого обязательного облака, никакого vendor lock-in.</div>
     </li>
     <li>
-      <div class="rule-title"><span class="rule-number">8</span>Данные принадлежат пользователю</div>
+      <h2 class="rule-title"><span class="rule-number">8</span>Данные принадлежат пользователю</h2>
       <div class="rule-body">Если приложение управляет данными пользователя — эти данные должны быть доступны для экспорта и импорта в любой момент. Данные принадлежат пользователю — не софту, не разработчику. Если проект умирает — данные выживают.</div>
     </li>
   </ol>
