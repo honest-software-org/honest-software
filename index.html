@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honest Software</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap">
+  </noscript>
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f5f4f0;
+      --fg: #111;
+      --muted: #6e6a60;
+      --rule: #d4d2cc;
+      --badge-bg: #e8e6e0;
+      --badge-bg-hover: #dedad2;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'IBM Plex Mono', monospace;
+      line-height: 1.7;
+      padding: 4rem 1.5rem 6rem;
+      max-width: 640px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .lang {
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .lang a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lang a:hover {
+      border-bottom-color: var(--fg);
+    }
+
+    .lang [aria-current],
+    .lang .sep {
+      color: var(--muted);
+    }
+
+    .lang .sep {
+      margin: 0 0.4rem;
+    }
+
+    .preamble {
+      font-size: 0.875rem;
+      color: var(--fg);
+      line-height: 1.8;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0;
+    }
+
+    ol {
+      list-style: none;
+    }
+
+    ol li {
+      margin-bottom: 2rem;
+    }
+
+    .rule-title {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .rule-number {
+      font-style: italic;
+      font-weight: 400;
+      margin-right: 0.6rem;
+    }
+
+    .rule-body {
+      font-size: 0.875rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .badge-section {
+      margin-top: 3rem;
+    }
+
+    .badge-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .badge-code {
+      font: inherit;
+      font-size: 0.75rem;
+      color: var(--fg);
+      background: var(--badge-bg);
+      border: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .badge-code:hover {
+      background: var(--badge-bg-hover);
+    }
+
+    .badge-code:focus-visible {
+      outline: 2px solid var(--fg);
+      outline-offset: 2px;
+    }
+
+    .copy-hint {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141412;
+        --fg: #e8e6e0;
+        --muted: #8a857a;
+        --rule: #2a2926;
+        --badge-bg: #1e1d1a;
+        --badge-bg-hover: #252320;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 2.5rem 1.25rem 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="topline">
+      <h1>Honest Software</h1>
+      <nav class="lang" aria-label="Language">
+        <span aria-current="true">EN</span><span class="sep">·</span><a href="/ru/" lang="ru">RU</a>
+      </nav>
+    </div>
+    <p class="preamble">
+      A set of principles for building software that respects people.
+      Inspired by the Dogma 95 film movement — which stripped cinema down to its bare essentials —
+      these rules strip software down to what it should have always been:
+      useful, transparent, and free. No exceptions. No compromises.
+    </p>
+  </header>
+
+  <hr>
+
+  <ol>
+    <li>
+      <div class="rule-title"><span class="rule-number">1</span>No data collection</div>
+      <div class="rule-body">The application must not collect, store, or transmit personal data. No accounts, no cookies, no analytics, no tracking — not even anonymized. If the software doesn't need to know who you are, it won't ask.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">2</span>Minimal permissions</div>
+      <div class="rule-body">The software must request only the permissions it cannot function without. No "just in case", no silent grabs. If you can't justify a permission in one sentence, you don't get it.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">3</span>No dark patterns</div>
+      <div class="rule-body">The interface must not manipulate. No hidden unsubscribe flows, no pre-checked boxes, no fake urgency, no guilt-tripping, no deceptive defaults. The UI must respect the user's attention and intelligence.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">4</span>System theme only</div>
+      <div class="rule-body">The application may support dark and light themes, but must not include a theme toggle. Use the system preference — nothing else. If a user wants to override your theme specifically, that's a signal your theme is broken, not a feature request.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">5</span>Free forever</div>
+      <div class="rule-body">The software must be free. No subscriptions, no paid tiers, no in-app purchases, no "pro" versions. If you're thinking about monetization, you're thinking about the wrong thing.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">6</span>Open source</div>
+      <div class="rule-body">All code must be open source and released under the MIT license — including the server-side. No proprietary backends, no hidden logic. If you can't read it, it shouldn't exist.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">7</span>Self-hostable</div>
+      <div class="rule-body">The software must be self-hostable by design. Any person with basic technical knowledge should be able to run it on their own infrastructure. No mandatory cloud, no vendor lock-in.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">8</span>Data ownership</div>
+      <div class="rule-body">If the software manages data on behalf of the user, that data must be fully exportable and importable at any time. The user owns their data — not the software, not the developer. If the project dies, the data survives.</div>
+    </li>
+  </ol>
+
+  <hr>
+
+  <div class="badge-section">
+    <div class="badge-label">Badge for your README</div>
+    <button type="button" class="badge-code" id="badge">[![Honest Software](https://img.shields.io/badge/Honest_Software-compliant-111111?style=flat-square)](https://honest-software.org)</button>
+    <div class="copy-hint" id="hint" aria-live="polite">click to copy</div>
+  </div>
+
+  <footer>
+    <p>Honest Software is an open standard. If your project follows these rules, it qualifies.<br>No registration required.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var badge = document.getElementById('badge');
+      var hint = document.getElementById('hint');
+      var idle = hint.textContent;
+
+      function say(message) {
+        hint.textContent = message;
+        setTimeout(function () { hint.textContent = idle; }, 2000);
+      }
+
+      badge.addEventListener('click', function () {
+        navigator.clipboard.writeText(badge.textContent.trim()).then(
+          function () { say('copied'); },
+          function () { say('copy failed — select the text manually'); }
+        );
+      });
+    })();
+  </script>
+
+</body>
+</html>

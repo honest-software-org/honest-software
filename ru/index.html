@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honest Software</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap">
+  </noscript>
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f5f4f0;
+      --fg: #111;
+      --muted: #6e6a60;
+      --rule: #d4d2cc;
+      --badge-bg: #e8e6e0;
+      --badge-bg-hover: #dedad2;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'IBM Plex Mono', monospace;
+      line-height: 1.7;
+      padding: 4rem 1.5rem 6rem;
+      max-width: 640px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .lang {
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .lang a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lang a:hover {
+      border-bottom-color: var(--fg);
+    }
+
+    .lang [aria-current],
+    .lang .sep {
+      color: var(--muted);
+    }
+
+    .lang .sep {
+      margin: 0 0.4rem;
+    }
+
+    .preamble {
+      font-size: 0.875rem;
+      color: var(--fg);
+      line-height: 1.8;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0;
+    }
+
+    ol {
+      list-style: none;
+    }
+
+    ol li {
+      margin-bottom: 2rem;
+    }
+
+    .rule-title {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .rule-number {
+      font-style: italic;
+      font-weight: 400;
+      margin-right: 0.6rem;
+    }
+
+    .rule-body {
+      font-size: 0.875rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .badge-section {
+      margin-top: 3rem;
+    }
+
+    .badge-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .badge-code {
+      font: inherit;
+      font-size: 0.75rem;
+      color: var(--fg);
+      background: var(--badge-bg);
+      border: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .badge-code:hover {
+      background: var(--badge-bg-hover);
+    }
+
+    .badge-code:focus-visible {
+      outline: 2px solid var(--fg);
+      outline-offset: 2px;
+    }
+
+    .copy-hint {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141412;
+        --fg: #e8e6e0;
+        --muted: #8a857a;
+        --rule: #2a2926;
+        --badge-bg: #1e1d1a;
+        --badge-bg-hover: #252320;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 2.5rem 1.25rem 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="topline">
+      <h1>Honest Software</h1>
+      <nav class="lang" aria-label="Язык">
+        <a href="/" lang="en">EN</a><span class="sep">·</span><span aria-current="true">RU</span>
+      </nav>
+    </div>
+    <p class="preamble">
+      Набор принципов для разработки софта, который уважает людей.
+      По духу близко к манифесту Dogma 95 — который содрал с кино весь грим и оставил только суть —
+      эти правила сдирают с софта всё лишнее и оставляют то, чем он должен был быть с самого начала:
+      полезным, прозрачным и бесплатным. Никаких исключений. Никаких компромиссов.
+    </p>
+  </header>
+
+  <hr>
+
+  <ol>
+    <li>
+      <div class="rule-title"><span class="rule-number">1</span>Никаких данных</div>
+      <div class="rule-body">Приложение не должно собирать, хранить или передавать персональные данные. Никаких аккаунтов, куки, аналитики, трекинга — даже анонимного. Если софту не нужно знать кто ты — он не спросит.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">2</span>Минимум разрешений</div>
+      <div class="rule-body">Приложение должно запрашивать только те разрешения, без которых оно буквально не работает. Никакого «на всякий случай», никаких тихих захватов. Если не можешь обосновать разрешение одним предложением — не получишь его.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">3</span>Никаких dark patterns</div>
+      <div class="rule-body">Интерфейс не должен манипулировать. Никаких скрытых кнопок отписки, никаких пречекнутых чекбоксов, никакой искусственной срочности, никакого guilt-tripping, никаких обманных дефолтов. UI обязан уважать внимание и интеллект пользователя.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">4</span>Системная тема</div>
+      <div class="rule-body">Приложение может поддерживать тёмную и светлую тему, но не должно содержать переключателя. Только системные настройки — и ничего больше. Если пользователь хочет переключить тему именно у тебя — это сигнал, что твоя тема сломана, а не запрос на фичу.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">5</span>Бесплатно навсегда</div>
+      <div class="rule-body">Софт должен быть бесплатным. Никаких подписок, платных тиров, внутренних покупок, «pro»-версий. Если думаешь о монетизации — думаешь не о том.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">6</span>Open source</div>
+      <div class="rule-body">Весь код должен быть открытым и выходить под лицензией MIT — включая серверную часть. Никаких проприетарных бэкендов, никакой скрытой логики. Если нельзя прочитать — значит, этого не должно существовать.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">7</span>Self-hostable</div>
+      <div class="rule-body">Софт должен быть self-hostable по дизайну. Любой человек с базовыми техническими знаниями должен уметь поднять его на своей инфраструктуре. Никакого обязательного облака, никакого vendor lock-in.</div>
+    </li>
+    <li>
+      <div class="rule-title"><span class="rule-number">8</span>Данные принадлежат пользователю</div>
+      <div class="rule-body">Если приложение управляет данными пользователя — эти данные должны быть доступны для экспорта и импорта в любой момент. Данные принадлежат пользователю — не софту, не разработчику. Если проект умирает — данные выживают.</div>
+    </li>
+  </ol>
+
+  <hr>
+
+  <div class="badge-section">
+    <div class="badge-label">Бейдж для твоего README</div>
+    <button type="button" class="badge-code" id="badge">[![Honest Software](https://img.shields.io/badge/Honest_Software-compliant-111111?style=flat-square)](https://honest-software.org)</button>
+    <div class="copy-hint" id="hint" aria-live="polite">нажми, чтобы скопировать</div>
+  </div>
+
+  <footer>
+    <p>Honest Software — открытый стандарт. Если твой проект следует этим правилам — он соответствует манифесту.<br>Регистрация не требуется.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var badge = document.getElementById('badge');
+      var hint = document.getElementById('hint');
+      var idle = hint.textContent;
+
+      function say(message) {
+        hint.textContent = message;
+        setTimeout(function () { hint.textContent = idle; }, 2000);
+      }
+
+      badge.addEventListener('click', function () {
+        navigator.clipboard.writeText(badge.textContent.trim()).then(
+          function () { say('скопировано'); },
+          function () { say('не удалось скопировать — выдели текст вручную'); }
+        );
+      });
+    })();
+  </script>
+
+</body>
+</html>
